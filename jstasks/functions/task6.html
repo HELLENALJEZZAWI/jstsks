@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Calculator</title>
+</head>
+<body>
+    <script>
+        function calculateSupply(age, amountPerDay) {
+    const maxAge = 100;
+    const remainingYears = maxAge - age;
+    const totalAmount = remainingYears * amountPerDay;
+
+    console.log(`You will need ${totalAmount} to last you until the ripe old age of ${maxAge}.`);
+}
+
+
+       
+        const userAge = 30;
+        const dailyAmount = 3; 
+        calculateSupply(userAge, dailyAmount);
+    </script>
+</body>
+</html>

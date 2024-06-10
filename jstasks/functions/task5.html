@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving License Check</title>
+</head>
+<body>
+    <script>
+       function canIGetADrivingLicense(age) {
+    if (age >= 20) {
+        return "yes you can";
+    } else {
+        const yearsToWait = 20 - age;
+        return `please come back after ${yearsToWait} years to get one`;
+    }
+}
+
+
+    
+        const userAge = 18; 
+        const result = canIGetADrivingLicense(userAge);
+        console.log(result); 
+    </script>
+</body>
+</html>

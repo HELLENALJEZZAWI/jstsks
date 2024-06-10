@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Counter</title>
+    <script>
+        let currentNumber = 0;
+
+        function getNextNumber() {
+            currentNumber++;
+            return currentNumber;
+        }
+
+        function resetCounter() {
+            const previousNumber = currentNumber;
+            currentNumber = 0;
+            return `Counter reset. Previous number was ${previousNumber}.`;
+        }
+
+        // Example usage:
+        console.log(getNextNumber()); 
+        console.log(getNextNumber()); 
+        console.log(resetCounter()); 
+        console.log(getNextNumber()); 
+    </script>
+</head>
+<body>
+</body>
+</html>

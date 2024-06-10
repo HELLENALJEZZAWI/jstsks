@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longer String</title>
+    <script>
+        function longerString(str1, str2, str3, str4) {
+            const strings = [str1, str2, str3, str4];
+            let longest = strings[0];
+            for (const str of strings) {
+                if (str.length > longest.length) {
+                    longest = str;
+                }
+            }
+            return longest;
+        }
+
+        const result = longerString("apple", "banana", "cherry", "date");
+        console.log("The longest string is:", result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
